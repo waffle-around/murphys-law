@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://d1sk11yrpu2cr"]
 
 [node name="Node2D" type="Node2D" unique_id=1760613659]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=415489196]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=705811449]
+position = Vector2(-4635, -3965)
