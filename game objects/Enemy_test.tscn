@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://bj4l25ca6xm4m" path="res://scripts/enemy_test.gd" id="1_jon38"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_velac"]
-size = Vector2(284.44446, 59.259277)
+size = Vector2(276.6667, 59.259277)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pnlk3"]
 size = Vector2(256, 68)
@@ -17,7 +17,7 @@ scale = Vector2(0.9, 0.135)
 texture = ExtResource("1_4yup4")
 
 [node name="feet" type="CollisionShape2D" parent="." unique_id=361123421]
-position = Vector2(0, 30.000002)
+position = Vector2(-0.50000155, 30.000002)
 scale = Vector2(0.9, 0.135)
 shape = SubResource("RectangleShape2D_velac")
 
