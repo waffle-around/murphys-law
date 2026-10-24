@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://cr6cw3t5smm4t"]
 
-[node name="Node2D" type="Node2D" unique_id=803908265]
+[ext_resource type="PackedScene" uid="uid://cv866pxkpx1g6" path="res://game objects/player_test.tscn" id="1_tyddb"]
+[ext_resource type="PackedScene" uid="uid://ckun8sv6gl0ik" path="res://game objects/Enemy_test.tscn" id="2_345v8"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_velac"]
+
+[node name="game" type="Node2D" unique_id=803908265]
+
+[node name="Player" parent="." unique_id=996770038 instance=ExtResource("1_tyddb")]
+position = Vector2(3, -38)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1608594074]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=256072534]
+shape = SubResource("WorldBoundaryShape2D_velac")
+
+[node name="RigidBody2D" parent="." unique_id=1224628070 instance=ExtResource("2_345v8")]
+position = Vector2(553, -158)

@@ -3,22 +3,45 @@
 [ext_resource type="Texture2D" uid="uid://862ax2noe3f" path="res://art assets/i'm-all-ears-bunny.png" id="1_4yup4"]
 [ext_resource type="Script" uid="uid://bj4l25ca6xm4m" path="res://scripts/enemy_test.gd" id="1_jon38"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wj7bd"]
-size = Vector2(135, 226)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_velac"]
+size = Vector2(284.44446, 59.259277)
 
-[node name="RigidBody2D" type="RigidBody2D" unique_id=1224628070]
-collision_mask = 0
-gravity_scale = 0.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pnlk3"]
+size = Vector2(256, 68)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1893916571]
 script = ExtResource("1_jon38")
-metadata/_edit_group_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=213833048]
-position = Vector2(-7.6293945e-06, 0)
-scale = Vector2(0.55614036, 0.5561403)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1306583889]
+scale = Vector2(0.9, 0.135)
 texture = ExtResource("1_4yup4")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=796282523]
-position = Vector2(-11.5, -4)
-shape = SubResource("RectangleShape2D_wj7bd")
+[node name="feet" type="CollisionShape2D" parent="." unique_id=361123421]
+position = Vector2(0, 30.000002)
+scale = Vector2(0.9, 0.135)
+shape = SubResource("RectangleShape2D_velac")
 
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=561971032]
+[node name="Area2D" type="Area2D" parent="." unique_id=1478451612]
+
+[node name="collision" type="CollisionShape2D" parent="Area2D" unique_id=773589196]
+shape = SubResource("RectangleShape2D_pnlk3")
+
+[node name="leftray" type="RayCast2D" parent="." unique_id=548230919]
+position = Vector2(-130, 33)
+target_position = Vector2(0, 5)
+hit_from_inside = true
+
+[node name="rightray" type="RayCast2D" parent="." unique_id=1704625722]
+position = Vector2(130, 33)
+target_position = Vector2(0, 5)
+hit_from_inside = true
+
+[node name="leftwallray" type="RayCast2D" parent="." unique_id=2067908283]
+position = Vector2(-130, 4)
+target_position = Vector2(-2, 0)
+
+[node name="rightwallray" type="RayCast2D" parent="." unique_id=239448907]
+position = Vector2(130, 4)
+target_position = Vector2(2, 0)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
