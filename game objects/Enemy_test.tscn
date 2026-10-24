@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://ckun8sv6gl0ik"]
+
+[ext_resource type="Texture2D" uid="uid://862ax2noe3f" path="res://art assets/i'm-all-ears-bunny.png" id="1_4yup4"]
+[ext_resource type="Script" uid="uid://bj4l25ca6xm4m" path="res://scripts/enemy_test.gd" id="1_jon38"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_velac"]
+size = Vector2(276.6667, 59.259277)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pnlk3"]
+size = Vector2(256, 68)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1893916571]
+script = ExtResource("1_jon38")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1306583889]
+scale = Vector2(0.9, 0.135)
+texture = ExtResource("1_4yup4")
+
+[node name="feet" type="CollisionShape2D" parent="." unique_id=361123421]
+position = Vector2(-0.50000155, 30.000002)
+scale = Vector2(0.9, 0.135)
+shape = SubResource("RectangleShape2D_velac")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1478451612]
+
+[node name="collision" type="CollisionShape2D" parent="Area2D" unique_id=773589196]
+shape = SubResource("RectangleShape2D_pnlk3")
+
+[node name="leftray" type="RayCast2D" parent="." unique_id=548230919]
+position = Vector2(-130, 33)
+target_position = Vector2(0, 5)
+hit_from_inside = true
+
+[node name="rightray" type="RayCast2D" parent="." unique_id=1704625722]
+position = Vector2(130, 33)
+target_position = Vector2(0, 5)
+hit_from_inside = true
+
+[node name="leftwallray" type="RayCast2D" parent="." unique_id=2067908283]
+position = Vector2(-130, 4)
+target_position = Vector2(-2, 0)
+
+[node name="rightwallray" type="RayCast2D" parent="." unique_id=239448907]
+position = Vector2(130, 4)
+target_position = Vector2(2, 0)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
