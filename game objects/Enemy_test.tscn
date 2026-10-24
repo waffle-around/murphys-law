@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ckun8sv6gl0ik"]
+
+[ext_resource type="Texture2D" uid="uid://862ax2noe3f" path="res://art assets/i'm-all-ears-bunny.png" id="1_4yup4"]
+[ext_resource type="Script" uid="uid://bj4l25ca6xm4m" path="res://scripts/enemy_test.gd" id="1_jon38"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wj7bd"]
+size = Vector2(135, 226)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=1224628070]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_jon38")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=213833048]
+position = Vector2(-7.6293945e-06, 0)
+scale = Vector2(0.55614036, 0.5561403)
+texture = ExtResource("1_4yup4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=796282523]
+position = Vector2(-11.5, -4)
+shape = SubResource("RectangleShape2D_wj7bd")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=561971032]
