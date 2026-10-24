@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://d1sk11yrpu2cr"]
+
+[ext_resource type="Texture2D" uid="uid://bcsuv63uhh3nc" path="res://art assets/placeholder_car.jpg" id="1_37kl0"]
+
+[node name="Node2D" type="Node2D" unique_id=1760613659]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=705811449]
+position = Vector2(-4635, -3965)
+
+[node name="Cat" type="CharacterBody2D" parent="." unique_id=2011510400]
+position = Vector2(-507, -283)
+
+[node name="Sprite2D" type="Sprite2D" parent="Cat" unique_id=795141461]
+texture = ExtResource("1_37kl0")
