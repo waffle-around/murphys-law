@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cr6cw3t5smm4t"]
 
 [ext_resource type="PackedScene" uid="uid://cv866pxkpx1g6" path="res://game objects/player_test.tscn" id="1_tyddb"]
-[ext_resource type="PackedScene" uid="uid://ckun8sv6gl0ik" path="res://game objects/Enemy_test.tscn" id="2_345v8"]
+[ext_resource type="PackedScene" uid="uid://dwqaffvxvsutt" path="res://game objects/Trashcan.tscn" id="2_uio0b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jon38"]
 size = Vector2(1330, 10)
@@ -17,5 +17,5 @@ position = Vector2(3, -38)
 position = Vector2(179, 5)
 shape = SubResource("RectangleShape2D_jon38")
 
-[node name="RigidBody2D" parent="." unique_id=1224628070 instance=ExtResource("2_345v8")]
-position = Vector2(543, -100)
+[node name="Trashcan" parent="." unique_id=701698453 instance=ExtResource("2_uio0b")]
+position = Vector2(593, -193)
