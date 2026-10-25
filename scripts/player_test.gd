@@ -4,7 +4,9 @@ extends CharacterBody2D
 const SPEED = 500.0 ## movement speed
 const JUMP_VELOCITY = -600.0 ## jump height
 signal action_pressed(strength: float)
+@onready var anim = $AnimatedSprite2D
 
+#handles misfortune aura mechanic
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("Activate Aura"): ## bound to x
 		action_pressed.emit(1.0) ## aura strength (not sure if we're gonna use this)
@@ -23,8 +25,10 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
+		anim.play("default")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		anim.play("idle")
 
 	move_and_slide()
 	
