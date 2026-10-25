@@ -3,13 +3,15 @@
 [ext_resource type="Script" uid="uid://b0d2ci54p3tuj" path="res://scripts/reciever.gd" id="1_f4lqn"]
 [ext_resource type="PackedScene" uid="uid://bv3ynewbxb67t" path="res://game objects/Misfortune events/Trashcan2.tscn" id="2_8dnvs"]
 [ext_resource type="Texture2D" uid="uid://cyacuad4mjipd" path="res://art assets/Trahs1.png" id="2_pdjgv"]
+[ext_resource type="AudioStream" uid="uid://vin2nxdkwsau" path="res://audio assets/sfx/trash explode.wav" id="4_oi6c6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cjfj"]
 size = Vector2(112, 190)
 
-[node name="Trashcan" type="Area2D" unique_id=701698453]
+[node name="Trashcan" type="Area2D" unique_id=701698453 node_paths=PackedStringArray("audio_stream_player_2d")]
 script = ExtResource("1_f4lqn")
 replacement_scene = ExtResource("2_8dnvs")
+audio_stream_player_2d = NodePath("AudioStreamPlayer2D")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1424155492]
@@ -19,3 +21,7 @@ texture = ExtResource("2_pdjgv")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=54302221]
 position = Vector2(-1, -2)
 shape = SubResource("RectangleShape2D_6cjfj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1643705423]
+stream = ExtResource("4_oi6c6")
+volume_db = -5.0

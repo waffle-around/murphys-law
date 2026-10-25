@@ -1,6 +1,7 @@
 extends Area2D
 
 @export var replacement_scene: PackedScene
+@export var audio_stream_player_2d: AudioStreamPlayer2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -18,4 +19,8 @@ func _on_player_action_pressed(strength: float) -> void:
 			new_object.global_position = global_position
 			get_parent().add_child(new_object)
 			
-		queue_free()
+			audio_stream_player_2d.play()
+			hide()
+			$CollisionShape2D.set_deferred("disabled", true)
+			await audio_stream_player_2d.finished
+			queue_free()
