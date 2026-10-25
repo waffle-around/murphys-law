@@ -8,7 +8,6 @@ signal action_pressed(strength: float)
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("Activate Aura"): ## bound to x
 		action_pressed.emit(1.0) ## aura strength (not sure if we're gonna use this)
-		print ("emitting!")
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.

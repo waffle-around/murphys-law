@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://esikm7vdyk4f"]
+
+[ext_resource type="Script" uid="uid://bsksof3t6y3r3" path="res://scripts/ui.gd" id="1_63wf1"]
+[ext_resource type="PackedScene" uid="uid://dnlxhlnkpaiwj" path="res://game objects/ui/hud.tscn" id="2_widb0"]
+
+[node name="UI" type="CanvasLayer" unique_id=1767477866]
+script = ExtResource("1_63wf1")
+
+[node name="HUD" parent="." unique_id=2106444686 instance=ExtResource("2_widb0")]
