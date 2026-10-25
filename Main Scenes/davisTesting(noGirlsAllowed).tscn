@@ -18,4 +18,4 @@ position = Vector2(179, 5)
 shape = SubResource("RectangleShape2D_jon38")
 
 [node name="RigidBody2D" parent="." unique_id=1224628070 instance=ExtResource("2_345v8")]
-position = Vector2(553, -158)
+position = Vector2(543, -100)
