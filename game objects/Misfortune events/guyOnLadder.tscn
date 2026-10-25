@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b2aryolhdtx0y"]
+
+[ext_resource type="Texture2D" uid="uid://cnvfrwposq6ot" path="res://art assets/Ladder 1.png" id="1_tqede"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tm81l"]
+size = Vector2(113, 717)
+
+[node name="GuyOnLadderr" type="Area2D" unique_id=1638342157]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=478203856]
+texture = ExtResource("1_tqede")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=496580921]
+position = Vector2(11.5, -8.5)
+shape = SubResource("RectangleShape2D_tm81l")

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cv866pxkpx1g6" path="res://game objects/player_test.tscn" id="1_tyddb"]
 [ext_resource type="PackedScene" uid="uid://ckun8sv6gl0ik" path="res://game objects/Enemy_test.tscn" id="2_345v8"]
-[ext_resource type="PackedScene" uid="uid://dwqaffvxvsutt" path="res://game objects/Trashcan.tscn" id="2_uio0b"]
+[ext_resource type="PackedScene" uid="uid://dwqaffvxvsutt" path="res://game objects/Misfortune events/Trashcan.tscn" id="2_uio0b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jon38"]
 size = Vector2(2223, 15)

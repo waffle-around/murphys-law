@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0 ## movement speed
-const JUMP_VELOCITY = -400.0 ## jump height
+const SPEED = 500.0 ## movement speed
+const JUMP_VELOCITY = -600.0 ## jump height
 signal action_pressed(strength: float)
 
 func _unhandled_input(event: InputEvent) -> void:
