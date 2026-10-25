@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cr6cw3t5smm4t"]
 
+[ext_resource type="PackedScene" uid="uid://esikm7vdyk4f" path="res://game objects/ui/UI.tscn" id="1_hprog"]
+[ext_resource type="Script" uid="uid://i3jyiw1t88kl" path="res://scripts/gameManager.gd" id="1_mvg24"]
 [ext_resource type="PackedScene" uid="uid://cv866pxkpx1g6" path="res://game objects/player_test.tscn" id="1_tyddb"]
 [ext_resource type="PackedScene" uid="uid://ckun8sv6gl0ik" path="res://game objects/Enemy_test.tscn" id="2_345v8"]
 [ext_resource type="PackedScene" uid="uid://dwqaffvxvsutt" path="res://game objects/Misfortune events/Trashcan.tscn" id="2_uio0b"]
@@ -8,6 +10,9 @@
 size = Vector2(2223, 15)
 
 [node name="game" type="Node2D" unique_id=803908265]
+script = ExtResource("1_mvg24")
+
+[node name="UI" parent="." unique_id=1767477866 instance=ExtResource("1_hprog")]
 
 [node name="Player" parent="." unique_id=996770038 instance=ExtResource("1_tyddb")]
 position = Vector2(3, -38)

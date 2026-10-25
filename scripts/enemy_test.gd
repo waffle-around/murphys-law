@@ -34,4 +34,4 @@ func _wait_dir_change(desired_dir: int) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body == player_node:
-		get_node("../gameManager")._take_damage()
+		get_parent()._take_damage()

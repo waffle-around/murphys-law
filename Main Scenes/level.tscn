@@ -1,4 +1,4 @@
-[gd_scene format=4 uid="uid://d1sk11yrpu2cr"]
+[gd_scene format=4 uid="uid://n7w62p7n4sbe"]
 
 [ext_resource type="Texture2D" uid="uid://csdyrbnerrq3m" path="res://art assets/Tilemaps/Placeholder/tiles_spritesheet.png" id="1_2xaso"]
 [ext_resource type="PackedScene" uid="uid://cv866pxkpx1g6" path="res://game objects/player_test.tscn" id="2_ky72t"]
