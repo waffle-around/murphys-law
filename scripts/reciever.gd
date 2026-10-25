@@ -9,4 +9,4 @@ func _on_player_action_pressed(strength: float) -> void:
 	# Check if the player is currently inside this Area2D
 	var player = get_node("../Player")
 	if overlaps_body(player):
-		print("misfortune occuring, strength: ", strength)
+		get_node("../gameManager")._cause_misfortune()
