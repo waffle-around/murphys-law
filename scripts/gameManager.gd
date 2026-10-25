@@ -18,5 +18,7 @@ func _take_damage():
 	if health == 0:
 		get_tree().call_deferred("reload_current_scene")
 
+
 func _ready() -> void:
-	audio_stream_player_2d.play()
+	if audio_stream_player_2d:
+		audio_stream_player_2d.play()

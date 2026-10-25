@@ -75,7 +75,7 @@ tile_map_data = PackedByteArray("AAD+//7/AgALACoAAAD6//7/AgALACoAAAD2//7/AgALACo
 tile_set = SubResource("TileSet_6cjfj")
 metadata/_edit_group_ = true
 
-[node name="Player2" parent="." unique_id=769617912 instance=ExtResource("2_ky72t")]
+[node name="Player" parent="." unique_id=769617912 instance=ExtResource("2_ky72t")]
 position = Vector2(202, -241)
 collision_layer = 7
 
