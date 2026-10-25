@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bv3ynewbxb67t"]
+
+[ext_resource type="Texture2D" uid="uid://c2kkg213ugnt1" path="res://art assets/Trash two.png" id="1_uob6s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o2nbc"]
+size = Vector2(186, 112)
+
+[node name="Trashcan2" type="Area2D" unique_id=1828095836]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1448990963]
+position = Vector2(18, 46)
+shape = SubResource("RectangleShape2D_o2nbc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=24679229]
+texture = ExtResource("1_uob6s")
