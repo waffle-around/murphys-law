@@ -1,11 +1,17 @@
 [gd_scene format=3 uid="uid://b2aryolhdtx0y"]
 
+[ext_resource type="Script" uid="uid://b0d2ci54p3tuj" path="res://scripts/reciever.gd" id="1_br8yt"]
 [ext_resource type="Texture2D" uid="uid://cnvfrwposq6ot" path="res://art assets/Ladder 1.png" id="1_tqede"]
+[ext_resource type="PackedScene" uid="uid://cgsvvsvg33kld" path="res://game objects/Misfortune events/ladder2.tscn" id="2_x2ash"]
+[ext_resource type="AudioStream" uid="uid://dqvfy138ojp5l" path="res://audio assets/sfx/fall scream.wav" id="4_rnbq0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tm81l"]
 size = Vector2(113, 717)
 
-[node name="GuyOnLadderr" type="Area2D" unique_id=1638342157]
+[node name="GuyOnLadderr" type="Area2D" unique_id=1638342157 node_paths=PackedStringArray("audio_stream_player_2d")]
+script = ExtResource("1_br8yt")
+replacement_scene = ExtResource("2_x2ash")
+audio_stream_player_2d = NodePath("AudioStreamPlayer2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=478203856]
 texture = ExtResource("1_tqede")
@@ -13,3 +19,6 @@ texture = ExtResource("1_tqede")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=496580921]
 position = Vector2(11.5, -8.5)
 shape = SubResource("RectangleShape2D_tm81l")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=603492417]
+stream = ExtResource("4_rnbq0")
