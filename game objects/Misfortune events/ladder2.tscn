@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cgsvvsvg33kld"]
 
-[ext_resource type="Texture2D" uid="uid://drq0tcdswq1bd" path="res://art assets/Ladder 2.png" id="1_emdno"]
+[ext_resource type="Texture2D" uid="uid://drq0tcdswq1bd" path="res://art assets/Ladder 2.png" id="1_ggw6q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rksdr"]
 size = Vector2(671, 120)
@@ -8,7 +8,7 @@ size = Vector2(671, 120)
 [node name="ladder2" type="Area2D" unique_id=1828095836]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1649401420]
-texture = ExtResource("1_emdno")
+texture = ExtResource("1_ggw6q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1027295525]
 position = Vector2(21.5, -9)
