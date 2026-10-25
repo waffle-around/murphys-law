@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 @onready var player_node: CharacterBody2D = get_parent().get_node("Player")
-var speed: float = 100.0
-var gravity = 15
+var speed: float = 100.0 ## movement speed
+var gravity = 15 ## falling speed
 var is_waiting: bool = false
 
 @export_range(-1,1) var dir: int = 1
