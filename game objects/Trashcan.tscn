@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://dwqaffvxvsutt"]
 
+[ext_resource type="Script" uid="uid://b0d2ci54p3tuj" path="res://scripts/reciever.gd" id="1_f4lqn"]
 [ext_resource type="Texture2D" uid="uid://bwv5uubdkr60r" path="res://art assets/2PYX5-A0020-1_v2.jpg" id="1_xcomq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cjfj"]
 size = Vector2(535, 536)
 
 [node name="Trashcan" type="Area2D" unique_id=701698453]
-collision_layer = 2
-collision_mask = 2
+script = ExtResource("1_f4lqn")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1424155492]

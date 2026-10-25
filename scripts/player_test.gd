@@ -3,7 +3,12 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+signal action_pressed(strength: float)
 
+func _unhandled_input(event: InputEvent) -> void:
+	if event.is_action_pressed("Activate Aura"): ##bound to x
+		action_pressed.emit(1.0)
+		print ("emitting!")
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
