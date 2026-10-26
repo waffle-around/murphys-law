@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cv866pxkpx1g6" path="res://game objects/player_test.tscn" id="7_j2omj"]
 [ext_resource type="PackedScene" uid="uid://ckun8sv6gl0ik" path="res://game objects/Enemy_test.tscn" id="8_snfxe"]
 [ext_resource type="PackedScene" uid="uid://esikm7vdyk4f" path="res://game objects/ui/UI.tscn" id="9_a4xp1"]
+[ext_resource type="Texture2D" uid="uid://ckt448tjphepb" path="res://background.png" id="10_j2omj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcp4x"]
 texture = ExtResource("3_u2213")
@@ -133,3 +134,33 @@ position = Vector2(5603, -46)
 
 [node name="CharacterBody2D4" parent="." unique_id=1314977740 instance=ExtResource("8_snfxe")]
 position = Vector2(9400, -42)
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1233206905]
+z_index = -2
+position = Vector2(-948.9999, -462)
+scale = Vector2(3.8992476, 2.475)
+texture = ExtResource("10_j2omj")
+
+[node name="Background2" type="Sprite2D" parent="." unique_id=742302308]
+z_index = -2
+position = Vector2(3154, -397)
+scale = Vector2(3.8992476, 2.475)
+texture = ExtResource("10_j2omj")
+
+[node name="Background3" type="Sprite2D" parent="." unique_id=39361302]
+z_index = -2
+position = Vector2(7380, -384)
+scale = Vector2(3.8992476, 2.475)
+texture = ExtResource("10_j2omj")
+
+[node name="Background4" type="Sprite2D" parent="." unique_id=1891156985]
+z_index = -2
+position = Vector2(11580, -364)
+scale = Vector2(3.8992476, 2.475)
+texture = ExtResource("10_j2omj")
+
+[node name="Background5" type="Sprite2D" parent="." unique_id=1435153891]
+z_index = -2
+position = Vector2(15780, -331)
+scale = Vector2(3.8992476, 2.475)
+texture = ExtResource("10_j2omj")
