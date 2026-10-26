@@ -75,11 +75,13 @@ texture_region_size = Vector2i(12, 12)
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_fcp4x")
 
-[node name="Node2D" type="Node2D" unique_id=1760613659]
+[node name="Node2D" type="Node2D" unique_id=1760613659 node_paths=PackedStringArray("audio_stream_player_2d")]
 script = ExtResource("1_f6b1x")
+audio_stream_player_2d = NodePath("AudioStreamPlayer2D")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=639466009]
 stream = ExtResource("2_t5cau")
+max_distance = 4096.0
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=867199734]
 position = Vector2(0, 184)
