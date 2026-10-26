@@ -15,7 +15,7 @@ script = ExtResource("1_mvg24")
 [node name="UI" parent="." unique_id=1767477866 instance=ExtResource("1_hprog")]
 
 [node name="Player" parent="." unique_id=996770038 instance=ExtResource("1_tyddb")]
-position = Vector2(3, -38)
+position = Vector2(-2325, -60)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1608594074]
 
@@ -24,7 +24,7 @@ position = Vector2(-267.5, 7.5)
 shape = SubResource("RectangleShape2D_jon38")
 
 [node name="Trashcan" parent="." unique_id=701698453 instance=ExtResource("2_uio0b")]
-position = Vector2(593, -193)
+position = Vector2(-1886, -91)
 
 [node name="CharacterBody2D" parent="." unique_id=1893916571 instance=ExtResource("2_345v8")]
 position = Vector2(-1156, -105)

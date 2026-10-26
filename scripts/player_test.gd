@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 500.0 ## movement speed
-const JUMP_VELOCITY = -600.0 ## jump height
+const JUMP_VELOCITY = -750.0 ## jump height
 signal action_pressed(strength: float)
 @onready var anim = $AnimatedSprite2D
 @onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D

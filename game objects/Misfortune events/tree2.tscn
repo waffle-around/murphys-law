@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://qrixfr2p84mo"]
 
+[ext_resource type="Texture2D" uid="uid://b0hfefohgcfti" path="res://art assets/Trash tree.png" id="1_d2rxa"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6cjfj"]
 
 [node name="tree" type="Area2D" unique_id=1828095836]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1066774773]
+texture = ExtResource("1_d2rxa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1550609859]
 shape = SubResource("RectangleShape2D_6cjfj")
