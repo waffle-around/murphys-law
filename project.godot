@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="MurphysLaw"
-run/main_scene="uid://d1sk11yrpu2cr"
+run/main_scene="uid://cvbmh76gy02qe"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
